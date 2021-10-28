@@ -14,6 +14,7 @@ class PageDefault extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: ComponentsPageDefault.menuDefaultOfApp,
+      
     );
   }
 }
