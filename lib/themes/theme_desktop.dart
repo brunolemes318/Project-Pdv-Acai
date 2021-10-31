@@ -12,8 +12,13 @@ class ThemeDesktop extends ThemeDefault {
   get getColorMenu => colorsOfApp['colorOfBackgroundOfMenu'];
 
   @override
-  // TODO: implement getShadowColorOfMenu
-  get getShadowColorOfMenu => super.getShadowColorOfMenu;
+  set setShadowColorOfMenu(Color color) {
+    color = Colors.transparent;
+    colorsOfApp['shadowColorMenu'] = color;
+  }
+
+  @override
+  get getShadowColorOfMenu => colorsOfApp['shadowColorMenu'];
 
   @override
   AppBarTheme get themeMenu {
