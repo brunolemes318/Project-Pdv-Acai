@@ -18,27 +18,32 @@ abstract class ThemeDefault {
   set colorBackgroundOfApp(Color color) =>
       colorsOfApp['backgroundColorOfApp'] = color.withOpacity(1);
 
+  get getBackgroundColorOfApp => colorsOfApp['backgroundColorOfApp'];
+
   set colorImageBackgroundOfApp(Color color) =>
       colorsOfApp['colorImageBackgroundOfApp'] = color.withOpacity(1);
+
+  get getImageColorBackground => colorsOfApp['colorImageBackgroundOfApp'];
 
   set colorMainOfApp(Color color) =>
       colorsOfApp['colorMainOfApp'] = color.withOpacity(1);
 
+  get getColorMainOfApp => colorsOfApp['colorMainOfApp'];
+
   set colorComplementaryOfApp(Color color) =>
       colorsOfApp['colorComplementaryOfApp'] = color.withOpacity(1);
+
+  get getColorComplementaryOfApp => colorsOfApp['ColorComplementaryOfApp'];
 
   set colorMenu(Color color) =>
       colorsOfApp['colorOfMenu'] = color.withOpacity(1);
 
-  get getBackgroundColorOfApp => colorsOfApp['backgroundColorOfApp'];
-
-  get getImageColorBackground => colorsOfApp['colorImageBackgroundOfApp'];
-
-  get getColorMainOfApp => colorsOfApp['colorMainOfApp'];
-
-  get getColorComplementaryOfApp => colorsOfApp['ColorComplementaryOfApp'];
-
   get getColorMenu => colorsOfApp['colorOfMenu'];
+
+  set setShadowColorOfMenu(Color color) =>
+      colorsOfApp['shadowColorMenu'] = color;
+
+  get getShadowColorOfMenu => colorsOfApp['shadowColorMenu'];
 
   AppBarTheme get themeMenu {
     return themeOfMenu = AppBarTheme(backgroundColor: getColorMenu);

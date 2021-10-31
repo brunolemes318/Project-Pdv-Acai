@@ -4,15 +4,21 @@ import 'package:pdv/themes/theme_default.dart';
 class ThemeDesktop extends ThemeDefault {
   @override
   set colorMenu(Color color) {
-    colorsOfApp['colorOfBackgroundOfMenu'] = Colors.transparent;
+    color = Colors.transparent;
+    colorsOfApp['colorOfBackgroundOfMenu'] = color;
   }
 
   @override
   get getColorMenu => colorsOfApp['colorOfBackgroundOfMenu'];
 
   @override
+  // TODO: implement getShadowColorOfMenu
+  get getShadowColorOfMenu => super.getShadowColorOfMenu;
+
+  @override
   AppBarTheme get themeMenu {
-    return themeOfMenu = AppBarTheme(backgroundColor: getColorMenu);
+    return themeOfMenu = AppBarTheme(
+        backgroundColor: getColorMenu, shadowColor: getShadowColorOfMenu);
   }
 
   @override
