@@ -9,8 +9,8 @@ abstract class ThemeDefault {
     'colorImageBackgroundOfApp': Color(0xEEF2DC).withOpacity(1),
     'colorMainOfApp': Color(0x593453).withOpacity(1),
     'colorComplementaryOfApp': Color(0xD93D59).withOpacity(1),
-    'd': Color(0xD93D4A).withOpacity(1),
-    'colorOfMenu': Colors.transparent
+    'shadowColorMenu': Colors.transparent,
+    'colorOfBackgroundOfMenu': Colors.transparent,
   };
 
   ThemeDefault();
@@ -27,6 +27,9 @@ abstract class ThemeDefault {
   set colorComplementaryOfApp(Color color) =>
       colorsOfApp['colorComplementaryOfApp'] = color.withOpacity(1);
 
+  set colorMenu(Color color) =>
+      colorsOfApp['colorOfMenu'] = color.withOpacity(1);
+
   get getBackgroundColorOfApp => colorsOfApp['backgroundColorOfApp'];
 
   get getImageColorBackground => colorsOfApp['colorImageBackgroundOfApp'];
@@ -42,6 +45,6 @@ abstract class ThemeDefault {
   }
 
   ThemeData get themeOfApp {
-    return theme = ThemeData();
+    return theme = ThemeData(appBarTheme: themeOfMenu);
   }
 }
