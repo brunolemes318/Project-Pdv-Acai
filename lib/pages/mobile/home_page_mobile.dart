@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class HomePageDeskop extends StatelessWidget{
+class HomePageMobile extends StatelessWidget{
   
   @override
   Widget build(BuildContext context) {
