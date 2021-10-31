@@ -35,8 +35,10 @@ abstract class ThemeDefault {
 
   get getColorComplementaryOfApp => colorsOfApp['ColorComplementaryOfApp'];
 
+  get getColorMenu => colorsOfApp['colorOfMenu'];
+
   AppBarTheme get themeMenu {
-    return themeOfMenu = AppBarTheme();
+    return themeOfMenu = AppBarTheme(backgroundColor: getColorMenu);
   }
 
   ThemeData get themeOfApp {
