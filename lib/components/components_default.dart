@@ -5,6 +5,7 @@ abstract class ComponentsDefault {
   AppBar menuOfApp = AppBar();
   Drawer menuHamburguerOfApp = Drawer();
   Image logo = Image.asset('');
+
   ComponentsDefault();
 
   AppBar get menu {
@@ -13,7 +14,14 @@ abstract class ComponentsDefault {
     );
   }
 
-  Widget get itensOfMenu{
-    return Row();
+  Widget get itensOfMenu {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [buttonAccount('Criar Login')],
+    );
+  }
+
+  ElevatedButton buttonAccount(String name) {
+    return ElevatedButton(onPressed: () {}, child: Text(name));
   }
 }

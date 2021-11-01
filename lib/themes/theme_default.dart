@@ -1,8 +1,14 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 abstract class ThemeDefault {
   ThemeData theme = ThemeData();
   AppBarTheme themeOfMenu = AppBarTheme();
+
+  Map<String, TextStyle> stylesFontsOfApp = {
+    '': TextStyle(),
+  };
 
   Map<String, Color> colorsOfApp = {
     'backgroundColorOfApp': Color(0xF2F2F2).withOpacity(1),
@@ -14,6 +20,12 @@ abstract class ThemeDefault {
   };
 
   ThemeDefault();
+
+  set setStyleText(TextStyle style) {
+    stylesFontsOfApp[''] = style;
+  }
+
+  get getStyleText => stylesFontsOfApp[''];
 
   set colorBackgroundOfApp(Color color) =>
       colorsOfApp['backgroundColorOfApp'] = color.withOpacity(1);
