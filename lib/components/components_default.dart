@@ -4,13 +4,7 @@ import '../../themes/theme_default.dart';
 abstract class ComponentsDefault {
   ComponentsDefault();
 
-  AppBar menuOfApp();
-
-  Row itensOfMenu();
+  Row menuOfApp();
 
   ElevatedButton buttonAccount(String name);
-
-  // set setPathLogo(String path);
-  // get getPathLogo => _path;
-
 }

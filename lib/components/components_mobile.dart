@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pdv/components/components_default.dart';
 
-class ComponentsMobile extends ComponentsDefault{
+class ComponentsMobile extends ComponentsDefault {
   ComponentsMobile();
 
   @override
@@ -21,6 +21,4 @@ class ComponentsMobile extends ComponentsDefault{
     // TODO: implement menuOfApp
     throw UnimplementedError();
   }
-  
- 
 }

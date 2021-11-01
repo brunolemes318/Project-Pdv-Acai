@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 class PageDefault extends StatelessWidget {
   late AppBar appBar;
-  late Container body;
+  late Widget body;
   PageDefault({Key? key, required this.appBar, required this.body})
       : super(key: key);
 
