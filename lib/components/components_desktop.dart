@@ -5,12 +5,20 @@ class ComponentsDesktop extends ComponentsDefault {
   ComponentsDesktop();
 
   @override
-  AppBar menu() {
-    return AppBar();
+  Row itensOfMenu() {
+    return Row();
   }
 
   @override
-  Widget itensOfMenu() {
-    return Row();
+  ElevatedButton buttonAccount(String name) {
+    return ElevatedButton(
+      child: Text(''),
+      onPressed: () {},
+    );
+  }
+
+  @override
+  AppBar menuOfApp() {
+    return AppBar(leading: itensOfMenu(),);
   }
 }

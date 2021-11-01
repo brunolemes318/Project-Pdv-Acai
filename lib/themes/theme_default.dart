@@ -3,12 +3,16 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 
 abstract class ThemeDefault {
-  ThemeData theme = ThemeData();
-  AppBarTheme themeOfMenu = AppBarTheme();
-
+  ThemeData? theme;
+  AppBarTheme? themeOfMenu;
+  ElevatedButtonThemeData? themeButtonHomePage;
   Map<String, TextStyle> stylesFontsOfApp = {
     'headline1 ': TextStyle(fontSize: 72),
-    'headline2': TextStyle(fontSize: 32)
+    'headline2': TextStyle(fontSize: 32),
+    'banner': TextStyle(
+      fontSize: 72,
+      color: Color(0xF2F2F2).withOpacity(1),
+    )
   };
 
   Map<String, Color> colorsOfApp = {
@@ -62,8 +66,14 @@ abstract class ThemeDefault {
     return themeOfMenu = AppBarTheme(backgroundColor: getColorMenu);
   }
 
+  ElevatedButtonThemeData get themeOfButton {
+    return themeButtonHomePage = ElevatedButtonThemeData(
+        style: ButtonStyle(backgroundColor: getBackgroundColorOfApp));
+  }
+
   ThemeData get themeOfApp {
     return theme = ThemeData(
+        elevatedButtonTheme: themeOfButton,
         appBarTheme: themeOfMenu,
         textTheme: TextTheme(
           headline1: stylesFontsOfApp['headline1'],

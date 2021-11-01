@@ -2,16 +2,15 @@ import 'package:flutter/material.dart';
 import '../../themes/theme_default.dart';
 
 abstract class ComponentsDefault {
-  Drawer menuHamburguerOfApp = Drawer();
-  Image logo = Image.asset('./images/logo.jpg');
-
   ComponentsDefault();
 
-  AppBar menu();
+  AppBar menuOfApp();
 
-  Widget itensOfMenu();
+  Row itensOfMenu();
 
-  ElevatedButton buttonAccount(String name) {
-    return ElevatedButton(onPressed: () {}, child: Text(name));
-  }
+  ElevatedButton buttonAccount(String name);
+
+  // set setPathLogo(String path);
+  // get getPathLogo => _path;
+
 }
