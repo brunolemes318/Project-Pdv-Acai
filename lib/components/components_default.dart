@@ -2,24 +2,14 @@ import 'package:flutter/material.dart';
 import '../../themes/theme_default.dart';
 
 abstract class ComponentsDefault {
-  AppBar menuOfApp = AppBar();
   Drawer menuHamburguerOfApp = Drawer();
-  Image logo = Image.asset('');
+  Image logo = Image.asset('./images/logo.jpg');
 
   ComponentsDefault();
 
-  AppBar get menu {
-    return menuOfApp = AppBar(
-      title: logo,
-    );
-  }
+  AppBar menu();
 
-  Widget get itensOfMenu {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [buttonAccount('Criar Login')],
-    );
-  }
+  Widget itensOfMenu();
 
   ElevatedButton buttonAccount(String name) {
     return ElevatedButton(onPressed: () {}, child: Text(name));

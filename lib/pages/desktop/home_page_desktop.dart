@@ -6,7 +6,9 @@ class HomePageDeskop extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return PageDefault(
-      appBar: ComponentsDesktop().menuOfApp,
+      appBar: ComponentsDesktop().menu(),
+      body: Container(child: Center(child: Text('Essa é a tela principal'),),),
+      
     );
   }
 }

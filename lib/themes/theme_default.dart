@@ -7,7 +7,8 @@ abstract class ThemeDefault {
   AppBarTheme themeOfMenu = AppBarTheme();
 
   Map<String, TextStyle> stylesFontsOfApp = {
-    '': TextStyle(),
+    'headline1 ': TextStyle(fontSize: 72),
+    'headline2': TextStyle(fontSize: 32)
   };
 
   Map<String, Color> colorsOfApp = {
@@ -62,6 +63,11 @@ abstract class ThemeDefault {
   }
 
   ThemeData get themeOfApp {
-    return theme = ThemeData(appBarTheme: themeOfMenu);
+    return theme = ThemeData(
+        appBarTheme: themeOfMenu,
+        textTheme: TextTheme(
+          headline1: stylesFontsOfApp['headline1'],
+          headline6: stylesFontsOfApp['headline6'],
+        ));
   }
 }
