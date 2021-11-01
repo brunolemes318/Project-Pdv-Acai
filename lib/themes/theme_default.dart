@@ -62,18 +62,17 @@ abstract class ThemeDefault {
 
   get getShadowColorOfMenu => colorsOfApp['shadowColorMenu'];
 
-  AppBarTheme get themeMenu {
-    return themeOfMenu = AppBarTheme(backgroundColor: getColorMenu);
-  }
-
   ElevatedButtonThemeData get themeOfButton {
     return themeButtonHomePage = ElevatedButtonThemeData(
-        style: ButtonStyle(backgroundColor: getBackgroundColorOfApp));
+      style: ElevatedButton.styleFrom(
+          shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(29.5))),
+    );
   }
 
   ThemeData get themeOfApp {
     return theme = ThemeData(
-        elevatedButtonTheme: themeOfButton,
+        elevatedButtonTheme: themeButtonHomePage,
         appBarTheme: themeOfMenu,
         textTheme: TextTheme(
           headline1: stylesFontsOfApp['headline1'],

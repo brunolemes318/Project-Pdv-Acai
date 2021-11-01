@@ -11,14 +11,9 @@ class ComponentsMobile extends ComponentsDefault {
   }
 
   @override
-  Row itensOfMenu() {
-    // TODO: implement itensOfMenu
-    throw UnimplementedError();
-  }
-
-  @override
-  AppBar menuOfApp() {
+  Row menuOfApp() {
     // TODO: implement menuOfApp
     throw UnimplementedError();
   }
+
 }
