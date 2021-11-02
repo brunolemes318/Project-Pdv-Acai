@@ -6,13 +6,15 @@ abstract class ThemeDefault {
   ThemeData? theme;
   AppBarTheme? themeOfMenu;
   ElevatedButtonThemeData? themeButtonHomePage;
+  
   Map<String, TextStyle> stylesFontsOfApp = {
     'headline1 ': TextStyle(fontSize: 72),
     'headline2': TextStyle(fontSize: 32),
     'banner': TextStyle(
       fontSize: 72,
       color: Color(0xF2F2F2).withOpacity(1),
-    )
+    ),
+    'textOfButton': TextStyle(fontSize: 32)
   };
 
   Map<String, Color> colorsOfApp = {
@@ -62,12 +64,11 @@ abstract class ThemeDefault {
 
   get getShadowColorOfMenu => colorsOfApp['shadowColorMenu'];
 
-  ElevatedButtonThemeData get themeOfButton {
-    return themeButtonHomePage = ElevatedButtonThemeData(
-      style: ElevatedButton.styleFrom(
-          shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(29.5))),
-    );
+  ButtonStyle get themeOfButton {
+    return ElevatedButton.styleFrom(
+        shape:
+            RoundedRectangleBorder(borderRadius: BorderRadius.circular(29.5)),
+        textStyle: stylesFontsOfApp['textOfButton']);
   }
 
   ThemeData get themeOfApp {

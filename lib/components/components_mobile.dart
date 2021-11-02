@@ -16,4 +16,22 @@ class ComponentsMobile extends ComponentsDefault {
     throw UnimplementedError();
   }
 
+  @override
+  Container background() {
+    // TODO: implement background
+    throw UnimplementedError();
+  }
+
+  @override
+  Card cardProduct() {
+    // TODO: implement cardProduct
+    throw UnimplementedError();
+  }
+
+  @override
+  Text textbanner() {
+    // TODO: implement textbanner
+    throw UnimplementedError();
+  }
+
 }
