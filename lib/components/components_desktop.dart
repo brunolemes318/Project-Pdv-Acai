@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:pdv/components/components_default.dart';
 import 'package:pdv/themes/theme_desktop.dart';
 
@@ -7,11 +6,11 @@ class ComponentsDesktop extends ComponentsDefault {
   ComponentsDesktop();
 
   @override
-  ElevatedButton buttonAccount(String name, SvgPicture iconOfButton) {
+  ElevatedButton buttonAccount(String name) {
     return ElevatedButton(
       style: ThemeDesktop().themeOfButton,
       child: Row(
-        children: [iconOfButton, Text(name) ],
+        children: [Text(name)],
       ),
       onPressed: () {},
     );
@@ -19,18 +18,16 @@ class ComponentsDesktop extends ComponentsDefault {
 
   @override
   Widget menuOfApp() {
-    return Container(
-      width: double.infinity,
-      height: double.infinity,
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [buttonAccount('Criar Login'), buttonAccount('Entrar')],
-          ),
-        ],
-      ),
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.start,
+      children: [
+        buttonAccount(
+          'CRIAR LOGIN',
+        ),
+        buttonAccount(
+          'ENTRAR',
+        )
+      ],
     );
   }
 
@@ -49,6 +46,12 @@ class ComponentsDesktop extends ComponentsDefault {
   @override
   Container background() {
     // TODO: implement background
+    throw UnimplementedError();
+  }
+
+  @override
+  TextField form() {
+    // TODO: implement form
     throw UnimplementedError();
   }
 }

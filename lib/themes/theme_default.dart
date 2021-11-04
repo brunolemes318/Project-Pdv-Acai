@@ -14,7 +14,7 @@ abstract class ThemeDefault {
       fontSize: 72,
       color: Color(0xF2F2F2).withOpacity(1),
     ),
-    'textOfButton': TextStyle(fontSize: 32)
+    'textOfButton': TextStyle(fontSize: 23)
   };
 
   Map<String, Color> colorsOfApp = {

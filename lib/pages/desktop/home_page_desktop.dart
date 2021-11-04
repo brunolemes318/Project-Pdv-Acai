@@ -6,10 +6,20 @@ class HomePageDeskop extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return PageDefault(
-      appBar: AppBar(),
       body: Stack(
         children: [
-          ComponentsDesktop().menuOfApp(),
+          Padding(
+            padding: EdgeInsets.all(20),
+            child: Stack(
+              children: [
+                Column(
+                  children: [
+                    ComponentsDesktop().menuOfApp(),
+                  ],
+                ),
+              ],
+            ),
+          )
         ],
       ),
     );

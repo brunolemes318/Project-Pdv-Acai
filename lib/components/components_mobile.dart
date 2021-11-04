@@ -34,4 +34,10 @@ class ComponentsMobile extends ComponentsDefault {
     throw UnimplementedError();
   }
 
+  @override
+  TextField form() {
+    // TODO: implement form
+    throw UnimplementedError();
+  }
+
 }
