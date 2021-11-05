@@ -4,6 +4,7 @@ import '../../themes/theme_default.dart';
 abstract class ComponentsDefault {
   String? pathToLogo;
   Image? logoOfApp;
+//  late double width, heigh;
 
   ComponentsDefault();
 
@@ -15,7 +16,7 @@ abstract class ComponentsDefault {
 
   Text textbanner();
 
-  Container background();
+  Container backgroundApp(double width, double height);
 
   TextField form();
 }

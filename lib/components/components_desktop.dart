@@ -24,6 +24,9 @@ class ComponentsDesktop extends ComponentsDefault {
         buttonAccount(
           'CRIAR LOGIN',
         ),
+        SizedBox(
+          width: 10,
+        ),
         buttonAccount(
           'ENTRAR',
         )
@@ -44,9 +47,12 @@ class ComponentsDesktop extends ComponentsDefault {
   }
 
   @override
-  Container background() {
-    // TODO: implement background
-    throw UnimplementedError();
+  Container backgroundApp(double width, double height) {
+    return Container(
+      width: width,
+      height: height,
+      decoration: ThemeDesktop().themeBackground(),
+    );
   }
 
   @override

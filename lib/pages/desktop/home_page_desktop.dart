@@ -5,6 +5,8 @@ import './../../components/components_desktop.dart';
 class HomePageDeskop extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    double width = MediaQuery.of(context).size.width * 0.50;
+    double height = MediaQuery.of(context).size.width * 0.50;
     return PageDefault(
       body: Stack(
         children: [
@@ -15,6 +17,9 @@ class HomePageDeskop extends StatelessWidget {
                 Column(
                   children: [
                     ComponentsDesktop().menuOfApp(),
+                    Center(
+                      child: ComponentsDesktop().backgroundApp(width, height),
+                    )
                   ],
                 ),
               ],
