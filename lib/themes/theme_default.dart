@@ -6,6 +6,7 @@ abstract class ThemeDefault {
   ThemeData? theme;
   AppBarTheme? themeOfMenu;
   ElevatedButtonThemeData? themeButtonHomePage;
+  double shapeCardFunction = 45;
 
   Map<String, TextStyle> stylesFontsOfApp = {
     'headline1 ': TextStyle(fontSize: 72),
@@ -69,6 +70,23 @@ abstract class ThemeDefault {
       colorsOfApp['colorButton'] = color.withOpacity(1);
 
   get getColorButton => colorsOfApp['colorButton'];
+
+  set setShapeCardFunction(double shape) {
+    shapeCardFunction = shape;
+  }
+
+  get getShapeCardFunction => shapeCardFunction;
+
+  BoxDecoration themeCardFunction() {
+    return BoxDecoration(
+        shape: BoxShape.circle,
+        borderRadius: BorderRadius.circular(45),
+        color: getColorMainOfApp);
+  }
+
+  BoxDecoration themeCardProduct() {
+    return BoxDecoration();
+  }
 
   ButtonStyle get themeOfButton {
     return ElevatedButton.styleFrom(

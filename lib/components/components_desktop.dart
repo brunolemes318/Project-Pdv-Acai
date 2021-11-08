@@ -18,26 +18,23 @@ class ComponentsDesktop extends ComponentsDefault {
 
   @override
   Widget menuOfApp() {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.start,
-      children: [
-        buttonAccount(
-          'CRIAR LOGIN',
-        ),
-        SizedBox(
-          width: 10,
-        ),
-        buttonAccount(
-          'ENTRAR',
-        )
-      ],
+    return Padding(
+      padding: EdgeInsets.all(20),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: [
+          buttonAccount(
+            'CRIAR LOGIN',
+          ),
+          SizedBox(
+            width: 10,
+          ),
+          buttonAccount(
+            'ENTRAR',
+          )
+        ],
+      ),
     );
-  }
-
-  @override
-  Card cardProduct() {
-    // TODO: implement cardProduct
-    throw UnimplementedError();
   }
 
   @override
@@ -59,5 +56,19 @@ class ComponentsDesktop extends ComponentsDefault {
   TextField form() {
     // TODO: implement form
     throw UnimplementedError();
+  }
+
+  @override
+  Container cardFunction() {
+    return Container(
+      decoration: ThemeDesktop().themeCardFunction(),
+    );
+  }
+
+  @override
+  Container cardProduct() {
+    return Container(
+      decoration: ThemeDesktop().themeCardProduct(),
+    );
   }
 }

@@ -23,12 +23,6 @@ class ComponentsMobile extends ComponentsDefault {
   }
 
   @override
-  Card cardProduct() {
-    // TODO: implement cardProduct
-    throw UnimplementedError();
-  }
-
-  @override
   Text textbanner() {
     // TODO: implement textbanner
     throw UnimplementedError();
@@ -40,4 +34,21 @@ class ComponentsMobile extends ComponentsDefault {
     throw UnimplementedError();
   }
 
+  @override
+  Container backgroundApp(double width, double height) {
+    // TODO: implement backgroundApp
+    throw UnimplementedError();
+  }
+
+  @override
+  Container cardFunction() {
+    // TODO: implement cardFunction
+    throw UnimplementedError();
+  }
+
+  @override
+  Container cardProduct() {
+    // TODO: implement cardProduct
+    throw UnimplementedError();
+  }
 }

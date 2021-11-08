@@ -12,7 +12,9 @@ abstract class ComponentsDefault {
 
   ElevatedButton buttonAccount(String name);
 
-  Card cardProduct();
+  Container cardFunction();
+
+  Container cardProduct();
 
   Text textbanner();
 
