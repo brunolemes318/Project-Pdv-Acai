@@ -18,22 +18,20 @@ class ComponentsDesktop extends ComponentsDefault {
 
   @override
   Widget menuOfApp() {
-    return Padding(
-      padding: EdgeInsets.all(20),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.start,
-        children: [
-          buttonAccount(
-            'CRIAR LOGIN',
-          ),
-          SizedBox(
-            width: 10,
-          ),
-          buttonAccount(
-            'ENTRAR',
-          )
-        ],
-      ),
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.start,
+      children: [
+        buttonAccount(
+          'CRIAR LOGIN',
+
+        ),
+        SizedBox(
+          width: 10,
+        ),
+        buttonAccount(
+          'ENTRAR',
+        )
+      ],
     );
   }
 
@@ -44,8 +42,12 @@ class ComponentsDesktop extends ComponentsDefault {
   }
 
   @override
-  Container backgroundApp(double width, double height) {
+  Container backgroundApp(BuildContext context) {
+    double width = MediaQuery.of(context).size.width;
+    double height = MediaQuery.of(context).size.height;
+
     return Container(
+      margin: EdgeInsets.only(top: 50),
       width: width,
       height: height,
       decoration: ThemeDesktop().themeBackground(),
@@ -70,5 +72,10 @@ class ComponentsDesktop extends ComponentsDefault {
     return Container(
       decoration: ThemeDesktop().themeCardProduct(),
     );
+  }
+
+  @override
+  Drawer MenuHamburguer() {
+    return Drawer();
   }
 }

@@ -18,7 +18,9 @@ abstract class ComponentsDefault {
 
   Text textbanner();
 
-  Container backgroundApp(double width, double height);
+  Container backgroundApp(BuildContext context);
 
   TextField form();
+
+  Drawer MenuHamburguer();
 }

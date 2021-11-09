@@ -7,6 +7,7 @@ abstract class ThemeDefault {
   AppBarTheme? themeOfMenu;
   ElevatedButtonThemeData? themeButtonHomePage;
   double shapeCardFunction = 45;
+  double space = 20;
 
   Map<String, TextStyle> stylesFontsOfApp = {
     'headline1 ': TextStyle(fontSize: 72),
@@ -88,6 +89,10 @@ abstract class ThemeDefault {
     return BoxDecoration();
   }
 
+  set setSpace(double valueSpace) => space = valueSpace;
+
+  get getSpace => EdgeInsets.all(space);
+
   ButtonStyle get themeOfButton {
     return ElevatedButton.styleFrom(
         primary: getColorButton,
@@ -98,9 +103,10 @@ abstract class ThemeDefault {
 
   BoxDecoration themeBackground() {
     return BoxDecoration(
+      
         shape: BoxShape.rectangle,
         borderRadius: BorderRadius.circular(65),
-        color: getBackgroundColorOfApp);
+        color: getImageColorBackground);
   }
 
   ThemeData get themeOfApp {

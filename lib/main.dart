@@ -9,6 +9,10 @@ void main() {
     theme: Home().getThemeOfPlatform() == 'is Mobile'
         ? ThemeMobile().themeOfApp
         : ThemeDesktop().themeOfApp,
-    home: Home(),
+    initialRoute: '/',
+    routes: {
+      '/': (context) => Home(), 
+
+    },
   ));
 }

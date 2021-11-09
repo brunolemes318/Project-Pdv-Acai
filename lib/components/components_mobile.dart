@@ -35,12 +35,6 @@ class ComponentsMobile extends ComponentsDefault {
   }
 
   @override
-  Container backgroundApp(double width, double height) {
-    // TODO: implement backgroundApp
-    throw UnimplementedError();
-  }
-
-  @override
   Container cardFunction() {
     // TODO: implement cardFunction
     throw UnimplementedError();
@@ -49,6 +43,18 @@ class ComponentsMobile extends ComponentsDefault {
   @override
   Container cardProduct() {
     // TODO: implement cardProduct
+    throw UnimplementedError();
+  }
+
+  @override
+  Container backgroundApp(BuildContext context) {
+    // TODO: implement backgroundApp
+    throw UnimplementedError();
+  }
+
+  @override
+  Drawer MenuHamburguer() {
+    // TODO: implement MenuHamburguer
     throw UnimplementedError();
   }
 }
