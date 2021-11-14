@@ -1,11 +1,29 @@
 import 'package:flutter/material.dart';
 import 'package:pdv/components/components_default.dart';
+<<<<<<< HEAD
 import 'package:pdv/pages/mobile/login_page_mobile.dart';
+=======
+>>>>>>> f8bcfd29228d1f2b3e122e815600145f66f219c5
 
 class ComponentsMobile extends ComponentsDefault {
   ComponentsMobile();
 
   @override
+<<<<<<< HEAD
+=======
+  ElevatedButton buttonAccount(String name) {
+    // TODO: implement buttonAccount
+    throw UnimplementedError();
+  }
+
+  @override
+  Row menuOfApp() {
+    // TODO: implement menuOfApp
+    throw UnimplementedError();
+  }
+
+  @override
+>>>>>>> f8bcfd29228d1f2b3e122e815600145f66f219c5
   Container background() {
     // TODO: implement background
     throw UnimplementedError();
@@ -46,6 +64,7 @@ class ComponentsMobile extends ComponentsDefault {
     // TODO: implement MenuHamburguer
     throw UnimplementedError();
   }
+<<<<<<< HEAD
 
   @override
   Drawer menuHamburguer() {
@@ -71,4 +90,6 @@ class ComponentsMobile extends ComponentsDefault {
     // TODO: implement buttonAccount
     throw UnimplementedError();
   }
+=======
+>>>>>>> f8bcfd29228d1f2b3e122e815600145f66f219c5
 }

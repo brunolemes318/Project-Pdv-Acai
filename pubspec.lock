@@ -7,7 +7,11 @@ packages:
       name: async
       url: "https://pub.dartlang.org"
     source: hosted
+<<<<<<< HEAD
     version: "2.6.1"
+=======
+    version: "2.8.1"
+>>>>>>> f8bcfd29228d1f2b3e122e815600145f66f219c5
   boolean_selector:
     dependency: transitive
     description:
@@ -28,7 +32,11 @@ packages:
       name: charcode
       url: "https://pub.dartlang.org"
     source: hosted
+<<<<<<< HEAD
     version: "1.2.0"
+=======
+    version: "1.3.1"
+>>>>>>> f8bcfd29228d1f2b3e122e815600145f66f219c5
   clock:
     dependency: transitive
     description:
@@ -80,7 +88,11 @@ packages:
       name: meta
       url: "https://pub.dartlang.org"
     source: hosted
+<<<<<<< HEAD
     version: "1.3.0"
+=======
+    version: "1.7.0"
+>>>>>>> f8bcfd29228d1f2b3e122e815600145f66f219c5
   path:
     dependency: transitive
     description:
@@ -134,7 +146,11 @@ packages:
       name: test_api
       url: "https://pub.dartlang.org"
     source: hosted
+<<<<<<< HEAD
     version: "0.3.0"
+=======
+    version: "0.4.2"
+>>>>>>> f8bcfd29228d1f2b3e122e815600145f66f219c5
   typed_data:
     dependency: transitive
     description:

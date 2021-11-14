@@ -1,44 +1,68 @@
+<<<<<<< HEAD
 import 'dart:js';
 
 import 'package:flutter/material.dart';
 import 'package:pdv/components/components_default.dart';
 import 'package:pdv/pages/desktop/login_page_desktop.dart';
 import 'package:pdv/pages/mobile/login_page_mobile.dart';
+=======
+import 'package:flutter/material.dart';
+import 'package:pdv/components/components_default.dart';
+>>>>>>> f8bcfd29228d1f2b3e122e815600145f66f219c5
 import 'package:pdv/themes/theme_desktop.dart';
 
 class ComponentsDesktop extends ComponentsDefault {
   ComponentsDesktop();
 
   @override
+<<<<<<< HEAD
   ElevatedButton buttonAccount(String name, String route, BuildContext context) {
+=======
+  ElevatedButton buttonAccount(String name) {
+>>>>>>> f8bcfd29228d1f2b3e122e815600145f66f219c5
     return ElevatedButton(
       style: ThemeDesktop().themeOfButton,
       child: Row(
         children: [Text(name)],
       ),
+<<<<<<< HEAD
       onPressed: () {
         Navigator.pushNamed(context, route);
       },
+=======
+      onPressed: () {},
+>>>>>>> f8bcfd29228d1f2b3e122e815600145f66f219c5
     );
   }
 
   @override
+<<<<<<< HEAD
   Widget menuOfApp(BuildContext context) {
+=======
+  Widget menuOfApp() {
+>>>>>>> f8bcfd29228d1f2b3e122e815600145f66f219c5
     return Row(
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
         buttonAccount(
           'CRIAR LOGIN',
+<<<<<<< HEAD
           '/loginpagedesktop',
             context
+=======
+
+>>>>>>> f8bcfd29228d1f2b3e122e815600145f66f219c5
         ),
         SizedBox(
           width: 10,
         ),
         buttonAccount(
           'ENTRAR',
+<<<<<<< HEAD
           '/loginpagedesktop',
           context
+=======
+>>>>>>> f8bcfd29228d1f2b3e122e815600145f66f219c5
         )
       ],
     );
@@ -87,6 +111,7 @@ class ComponentsDesktop extends ComponentsDefault {
   Drawer MenuHamburguer() {
     return Drawer();
   }
+<<<<<<< HEAD
 
   @override
   Drawer menuHamburguer() {
@@ -100,4 +125,6 @@ class ComponentsDesktop extends ComponentsDefault {
       '/loginpagedesktop' : (context)=>LoginPageDesktop()
     };
   }
+=======
+>>>>>>> f8bcfd29228d1f2b3e122e815600145f66f219c5
 }
