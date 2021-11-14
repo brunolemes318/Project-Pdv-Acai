@@ -6,18 +6,6 @@ class ComponentsMobile extends ComponentsDefault {
   ComponentsMobile();
 
   @override
-  ElevatedButton buttonAccount(String name) {
-    // TODO: implement buttonAccount
-    throw UnimplementedError();
-  }
-
-  @override
-  Row menuOfApp() {
-    // TODO: implement menuOfApp
-    throw UnimplementedError();
-  }
-
-  @override
   Container background() {
     // TODO: implement background
     throw UnimplementedError();
@@ -66,7 +54,21 @@ class ComponentsMobile extends ComponentsDefault {
   }
 
   @override
-  Map<String, Widget Function(BuildContext context)> routes(BuildContext context) {
+  Map<String, Widget Function(BuildContext context)> routes(
+      BuildContext context) {
     return {'/loginpagemobile': (context) => LoginPageMobile()};
+  }
+
+  @override
+  Widget menuOfApp(BuildContext context) {
+    // TODO: implement menuOfApp
+    throw UnimplementedError();
+  }
+
+  @override
+  ElevatedButton buttonAccount(
+      String name, String route, BuildContext context) {
+    // TODO: implement buttonAccount
+    throw UnimplementedError();
   }
 }

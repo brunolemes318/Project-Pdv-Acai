@@ -18,7 +18,7 @@ class HomePageDesktop extends StatelessWidget {
                   ],
                 ),
                 //Menu com os botões
-                ComponentsDesktop().menuOfApp(),
+                ComponentsDesktop().menuOfApp(context),
               ],
             ),
           ),

@@ -8,9 +8,9 @@ abstract class ComponentsDefault {
 
   ComponentsDefault();
 
-  Widget menuOfApp();
+  Widget menuOfApp(BuildContext context);
 
-  ElevatedButton buttonAccount(String name);
+  ElevatedButton buttonAccount(String name, String route, BuildContext context);
 
   Container cardFunction();
 
@@ -24,5 +24,6 @@ abstract class ComponentsDefault {
 
   Drawer menuHamburguer();
 
-  Map<String, Widget Function(BuildContext context)> routes(BuildContext context);
+  Map<String, Widget Function(BuildContext context)> routes(
+      BuildContext context);
 }

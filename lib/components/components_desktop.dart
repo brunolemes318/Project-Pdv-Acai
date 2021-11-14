@@ -10,29 +10,35 @@ class ComponentsDesktop extends ComponentsDefault {
   ComponentsDesktop();
 
   @override
-  ElevatedButton buttonAccount(String name) {
+  ElevatedButton buttonAccount(String name, String route, BuildContext context) {
     return ElevatedButton(
       style: ThemeDesktop().themeOfButton,
       child: Row(
         children: [Text(name)],
       ),
-      onPressed: () {},
+      onPressed: () {
+        Navigator.pushNamed(context, route);
+      },
     );
   }
 
   @override
-  Widget menuOfApp() {
+  Widget menuOfApp(BuildContext context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
         buttonAccount(
           'CRIAR LOGIN',
+          '/loginpagedesktop',
+            context
         ),
         SizedBox(
           width: 10,
         ),
         buttonAccount(
           'ENTRAR',
+          '/loginpagedesktop',
+          context
         )
       ],
     );
