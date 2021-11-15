@@ -1,6 +1,5 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 abstract class ThemeDefault {
   ThemeData? theme;
@@ -16,8 +15,9 @@ abstract class ThemeDefault {
       fontSize: 72,
       color: Color(0xF2F2F2).withOpacity(1),
     ),
-    'textOfButton': TextStyle(fontSize: 15),
-    'textOfCardFunction': TextStyle(fontSize: 20, color: Colors.white),
+    'textOfButton': GoogleFonts.openSans(color: Colors.white, fontSize: 16),
+    'textOfCardFunction':
+        GoogleFonts.openSans(color: Colors.white, fontSize: 32),
   };
 
   Map<String, Color> colorsOfApp = {
