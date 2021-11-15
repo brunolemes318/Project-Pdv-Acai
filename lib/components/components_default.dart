@@ -12,7 +12,7 @@ abstract class ComponentsDefault {
 
   ElevatedButton buttonAccount(String name, String route, BuildContext context);
 
-  Container cardFunction(BuildContext context);
+  Container cardFunction(BuildContext context, String name);
 
   Container cardProduct();
 

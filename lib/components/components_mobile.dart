@@ -23,12 +23,7 @@ class ComponentsMobile extends ComponentsDefault {
     throw UnimplementedError();
   }
 
-  @override
-  Container cardFunction(BuildContext context) {
-    // TODO: implement cardFunction
-    throw UnimplementedError();
-  }
-
+  
   @override
   Container cardProduct() {
     // TODO: implement cardProduct
@@ -69,6 +64,12 @@ class ComponentsMobile extends ComponentsDefault {
   ElevatedButton buttonAccount(
       String name, String route, BuildContext context) {
     // TODO: implement buttonAccount
+    throw UnimplementedError();
+  }
+
+  @override
+  Container cardFunction(BuildContext context, String name) {
+    // TODO: implement cardFunction
     throw UnimplementedError();
   }
 }

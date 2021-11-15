@@ -52,7 +52,11 @@ class ComponentsDesktop extends ComponentsDefault {
       child: Align(
         alignment: Alignment.bottomLeft,
         child: Row(
-          children: [cardFunction(context), cardFunction(context), cardFunction(context)],
+          children: [
+            cardFunction(context, 'Vendas'),
+            cardFunction(context, 'Estoque'),
+            cardFunction(context, 'Relatórios')
+          ],
         ),
       ),
       margin: EdgeInsets.only(top: 50),
@@ -69,10 +73,17 @@ class ComponentsDesktop extends ComponentsDefault {
   }
 
   @override
-  Container cardFunction(BuildContext context) {
+  Container cardFunction(BuildContext context, String name) {
     double width = MediaQuery.of(context).size.width * 0.15;
     double height = MediaQuery.of(context).size.height * 0.30;
     return Container(
+      child: Align(
+        alignment: Alignment.topCenter,
+        child: Text(
+          name,
+          style: ThemeDesktop().getStyleTextCardFunction,
+        ),
+      ),
       margin: EdgeInsets.all(20),
       width: width,
       height: height,

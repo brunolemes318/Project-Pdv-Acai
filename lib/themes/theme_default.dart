@@ -16,7 +16,8 @@ abstract class ThemeDefault {
       fontSize: 72,
       color: Color(0xF2F2F2).withOpacity(1),
     ),
-    'textOfButton': TextStyle(fontSize: 15)
+    'textOfButton': TextStyle(fontSize: 15),
+    'textOfCardFunction': TextStyle(fontSize: 20, color: Colors.white),
   };
 
   Map<String, Color> colorsOfApp = {
@@ -31,11 +32,11 @@ abstract class ThemeDefault {
 
   ThemeDefault();
 
-  set setStyleText(TextStyle style) {
-    stylesFontsOfApp[''] = style;
+  set setStyleTextCardFunction(TextStyle style) {
+    stylesFontsOfApp['textOfCardFunction'] = style;
   }
 
-  get getStyleText => stylesFontsOfApp[''];
+  get getStyleTextCardFunction => stylesFontsOfApp['textOfCardFunction'];
 
   set colorBackgroundOfApp(Color color) =>
       colorsOfApp['backgroundColorOfApp'] = color.withOpacity(1);
