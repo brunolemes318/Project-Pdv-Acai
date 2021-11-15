@@ -80,7 +80,7 @@ abstract class ThemeDefault {
 
   BoxDecoration themeCardFunction() {
     return BoxDecoration(
-        shape: BoxShape.circle,
+        shape: BoxShape.rectangle,
         borderRadius: BorderRadius.circular(45),
         color: getColorMainOfApp);
   }
