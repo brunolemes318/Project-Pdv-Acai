@@ -103,7 +103,10 @@ abstract class ThemeDefault {
 
   BoxDecoration themeBackground() {
     return BoxDecoration(
-      
+        boxShadow: [
+          BoxShadow(
+              color: Colors.transparent, blurRadius: 0, offset: Offset.zero)
+        ],
         shape: BoxShape.rectangle,
         borderRadius: BorderRadius.circular(65),
         color: getImageColorBackground);

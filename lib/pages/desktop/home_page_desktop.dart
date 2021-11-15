@@ -12,12 +12,7 @@ class HomePageDesktop extends StatelessWidget {
           body: SingleChildScrollView(
             child: Stack(
               children: [
-                Column(
-                  children: [
-                    ComponentsDesktop().cardFunction(),
-                    ComponentsDesktop().backgroundApp(context),
-                  ],
-                ),
+                ComponentsDesktop().backgroundApp(context),
                 //Menu com os botões
                 ComponentsDesktop().menuOfApp(context),
               ],

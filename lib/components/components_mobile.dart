@@ -24,7 +24,7 @@ class ComponentsMobile extends ComponentsDefault {
   }
 
   @override
-  Container cardFunction() {
+  Container cardFunction(BuildContext context) {
     // TODO: implement cardFunction
     throw UnimplementedError();
   }

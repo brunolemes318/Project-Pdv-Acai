@@ -49,6 +49,9 @@ class ComponentsDesktop extends ComponentsDefault {
     double height = MediaQuery.of(context).size.height;
 
     return Container(
+      child: Row(
+        children: [cardFunction(context)],
+      ),
       margin: EdgeInsets.only(top: 50),
       width: width,
       height: height,
@@ -63,8 +66,12 @@ class ComponentsDesktop extends ComponentsDefault {
   }
 
   @override
-  Container cardFunction() {
+  Container cardFunction(BuildContext context) {
+    double width = MediaQuery.of(context).size.width * 0.15;
+    double height = MediaQuery.of(context).size.height * 0.30;
     return Container(
+      width: width,
+      height: height,
       decoration: ThemeDesktop().themeCardFunction(),
     );
   }
