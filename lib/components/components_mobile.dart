@@ -23,7 +23,6 @@ class ComponentsMobile extends ComponentsDefault {
     throw UnimplementedError();
   }
 
-  
   @override
   Container cardProduct() {
     // TODO: implement cardProduct
@@ -70,6 +69,18 @@ class ComponentsMobile extends ComponentsDefault {
   @override
   Container cardFunction(BuildContext context, String name) {
     // TODO: implement cardFunction
+    throw UnimplementedError();
+  }
+
+  @override
+  IconButton buttonReturn(String route, BuildContext context) {
+    // TODO: implement buttonReturn
+    throw UnimplementedError();
+  }
+
+  @override
+  GestureDetector detector(BuildContext context, String route, Widget child) {
+    // TODO: implement detector
     throw UnimplementedError();
   }
 }

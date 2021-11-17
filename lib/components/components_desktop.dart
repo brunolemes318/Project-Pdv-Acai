@@ -24,6 +24,13 @@ class ComponentsDesktop extends ComponentsDefault {
   }
 
   @override
+  IconButton buttonReturn(String route, BuildContext context) {
+    return IconButton(
+        onPressed: () => Navigator.pushNamed(context, route),
+        icon: Icon(Icons.keyboard_return_outlined));
+  }
+
+  @override
   Widget menuOfApp(BuildContext context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.start,
@@ -53,9 +60,9 @@ class ComponentsDesktop extends ComponentsDefault {
         alignment: Alignment.bottomLeft,
         child: Row(
           children: [
-            cardFunction(context, 'Vendas'),
-            cardFunction(context, 'Estoque'),
-            cardFunction(context, 'Relatórios')
+            detector(context, '/', cardFunction(context, 'Vendas')),
+            detector(context, '/', cardFunction(context, 'Estoque')),
+            detector(context, '/', cardFunction(context, 'Relatório'))
           ],
         ),
       ),
@@ -108,5 +115,13 @@ class ComponentsDesktop extends ComponentsDefault {
   Drawer MenuHamburguer() {
     // TODO: implement MenuHamburguer
     throw UnimplementedError();
+  }
+
+  @override
+  GestureDetector detector(BuildContext context, String route, Widget child) {
+    return GestureDetector(
+      child: child,
+      onTap: () => Navigator.pushNamed(context, route),
+    );
   }
 }

@@ -9,12 +9,8 @@ abstract class ThemeDefault {
   double space = 20;
 
   Map<String, TextStyle> stylesFontsOfApp = {
-    'headline1 ': TextStyle(fontSize: 72),
-    'headline2': TextStyle(fontSize: 32),
-    'banner': TextStyle(
-      fontSize: 72,
-      color: Color(0xF2F2F2).withOpacity(1),
-    ),
+    'banner': GoogleFonts.openSans(
+        fontSize: 72, color: Color(0xF2F2F2).withOpacity(1)),
     'textOfButton': GoogleFonts.openSans(color: Colors.white, fontSize: 16),
     'textOfCardFunction':
         GoogleFonts.openSans(color: Colors.white, fontSize: 32),
@@ -32,11 +28,17 @@ abstract class ThemeDefault {
 
   ThemeDefault();
 
-  set setStyleTextCardFunction(TextStyle style) {
-    stylesFontsOfApp['textOfCardFunction'] = style;
+  set setStyleTextCardFunction(GoogleFonts style) {
+    stylesFontsOfApp['textOfCardFunction'] = style as TextStyle;
   }
 
   get getStyleTextCardFunction => stylesFontsOfApp['textOfCardFunction'];
+
+  set setStyleTextOfButton(GoogleFonts style) {
+    stylesFontsOfApp['textOfCardFunction'] = style as TextStyle;
+  }
+
+  get getStyleTextOfButton => stylesFontsOfApp['textOfCardFunction'];
 
   set colorBackgroundOfApp(Color color) =>
       colorsOfApp['backgroundColorOfApp'] = color.withOpacity(1);

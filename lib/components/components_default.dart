@@ -11,6 +11,8 @@ abstract class ComponentsDefault {
   Widget menuOfApp(BuildContext context);
 
   ElevatedButton buttonAccount(String name, String route, BuildContext context);
+  
+  IconButton buttonReturn(String route, BuildContext context);
 
   Container cardFunction(BuildContext context, String name);
 
@@ -21,6 +23,8 @@ abstract class ComponentsDefault {
   Container backgroundApp(BuildContext context);
 
   TextField form();
+
+  GestureDetector detector(BuildContext context, String route, Widget child);
 
   Map<String, Widget Function(BuildContext context)> routes(
       BuildContext context);
